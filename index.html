@@ -123,7 +123,52 @@ textarea {
 }
 #p{font-family:courier; font-size: 20px;color:black}
 
+<<!-- per navigare tra le pagine -->
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+	font-family: VT323;
+	font-size: 20px;
+    color: black;
+    float: left;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: -10px 4px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+div.center {text-align: center;}
+<!-- classe per la barra di caricamento -->
+.cc {
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+.dd {
+    width: 1000px;
+}
+.ee {width:1200px;
+	 height:40px;}
+	 
+.ff {font-family:VT323;
+	 color:white;
+	 font-size:25px;
 </style>
+
 <head>
 
 <title>VZB offical page</title>
@@ -139,10 +184,18 @@ textarea {
 <div id="uno">
 
 <div id="due">
+<a href="https://lihao98.github.io/VZB/">
   <button type="button" class="btn btn-info">Home</button>
+</a>
+<a href="https://lihao98.github.io/VZB/">
   <button type="button" class="btn btn-primary">Info</button>
+</a>
+<a href="https://lihao98.github.io/VZB/">
   <button type="button" class="btn btn-success">Donations</button>
-  <button type="button" class="btn btn-danger">Missions</button>     
+</a>
+<a href="https://lihao98.github.io/VZB/">
+  <button type="button" class="btn btn-danger">Missions</button>
+</a>
 	
 <input type="text">
 <button type="button" class="btn btn-default" value="Search">
@@ -267,11 +320,11 @@ Tread softly because you tread on my dreams.
 <div class="container">
   <h2 class="ciao">Mission: Conquer</h2>
   <p>Conquering the world</p> 
-  <div class="progress progress-striped">
-
-    <div class="progress-bar progress-bar-danger active" role="progressbar" style="width:70%">
-      666%
+  <div class="progress progress-striped ee">
+    <div class="progress-bar progress-bar-danger active dd ff" role="progressbar" >
+      
     </div>
+	</div>
   </div>
 </div>
 <p3>
@@ -564,7 +617,19 @@ Tread softly because you tread on my dreams.
     <input class="submit" type="button" onclick="alert('Congratulations you got hacked!')" value="SUBMIT">
   </form>
 </div>
-
+<div class="center">
+  <ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a class="active" href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">»</a></li>
+  </ul>
+</div>
 <footer class="container-fluid text-center" style="background-color:silver";>
   <p class="finito">Developed and Coded by Li Hao Zhang</p>
 </footer>
