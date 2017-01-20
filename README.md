@@ -1,1 +1,571 @@
-# VZB
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Cabin|Indie+Flower|VT323" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+h1 {font-family:VT323; font-size:35px; text-align:center;color:white}
+h3 {font-family:VT323; font-size:40px;color:white}
+h4 {font-family:Cabin; font-size:28px;color:red}
+p {font-family:VT323; font-size: 20px;color:silver}
+marquee {font-family:VT323; color:red; font-size: 40px;} 
+p2 {font-family:VT323; font-size: 20px;color:silver}
+p3 {font-family:Indie Flower; font-size:20px; color:#EEE8AA;}
+body {background-color:black}
+.ciao {font-family:VT323; font-size:35px; color:red}
+#contenitore{ margin: 0 auto; /* ipotizzando che sia centrato all'interno della pagina */
+    padding: 0;
+    position: relative;
+    width: 500px;}
+#uno{ width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;}
+#due{width: 350px;
+    position: absolute;
+    top: 0;
+    left: 500px; /* che è la larghezza del primo elemento */}
+	
+.floating-box {
+    display: inline-block;
+    width: 380px;
+    height: 180px;
+    margin: 20px; 
+}
+.finito {font-family:VT323; font-size:20px; color:black;}
+.aa {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.bb:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+	font-family: VT323;
+	font-size:30px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.format {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+#p{font-family:courier; font-size: 20px;color:black}
+
+</style>
+<head>
+
+<title>VZB offical page</title>
+
+</head>
+
+<body>
+
+<marquee scrollamount="20">WARNING! WARNING! WARNING!</marquee>
+
+<p>
+<div id="contenitore">
+<div id="uno">
+
+<div id="due">
+  <button type="button" class="btn btn-info">Home</button>
+  <button type="button" class="btn btn-primary">Info</button>
+  <button type="button" class="btn btn-success">Donations</button>
+  <button type="button" class="btn btn-danger">Missions</button>     
+	
+<input type="text">
+<button type="button" class="btn btn-default" value="Search">
+      <span class="glyphicon glyphicon-search"></span> Search
+</div>
+</div>
+
+  </p>
+ </div>
+<div class="container-fluid">
+<div class="container">
+  <div class="page-header">
+    <h1>Welcome to the VZB corporation</h1>      
+  </div>
+<div class="row">
+</div>
+<div class="col-sm-8">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+	  <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="C:\Users\Roxas\Desktop\Stage\aldnoah.jpg" alt="Image0">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\Roxas\Desktop\Stage\easy.jpg" alt="Image1">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+	  <div class="item">
+        <img src="C:\Users\Roxas\Desktop\Stage\easy2.jpg" alt="Image2">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+	  
+	  <div class="item">
+        <img src="C:\Users\Roxas\Desktop\Stage\easy3.jpg" alt="Image3">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+	  
+	   <div class="item">
+        <img src="C:\Users\Roxas\Desktop\Stage\easy4.png" alt="Image4">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+	  </div>
+	  
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+</div>
+<div class="col-sm-4">
+<div class="container">
+<!-- Per creare un pulsante -->
+  <h2>A button here?</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click me!</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content -->
+      <div class="modal-content" style="background-color:black">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Congratulations you discovered a message!</h4>
+        </div>
+        <div class="modal-body">
+          <p3>
+		     I'm the one that has to die<br>
+			 when it's time for me to die,<br>
+			 so let me live my life,<br>
+			 the way I want to.
+		  </p3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<p2>
+<br><br>
+Had I the heavens' embroided cloths,<br>
+Enwrought with golden and silver light,<br>
+The blue and the dim and the dark cloths<br>
+Of night and light and the half-light,<br>
+I would spread the cloths under your feet:<br>
+But I, being poor, have only my dreams;<br>
+I have spread my dreams under your feet;<br>
+Tread softly because you tread on my dreams.
+</p2>
+</div>
+</div>
+</div>
+<div class="container">
+  <h2 class="ciao">Mission: Conquer</h2>
+  <p>Conquering the world</p> 
+  <div class="progress progress-striped">
+
+    <div class="progress-bar progress-bar-danger active" role="progressbar" style="width:70%">
+      666%
+    </div>
+  </div>
+</div>
+<p3>
+<h1>Completed missions</h1>
+
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\fjords.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\fjords.jpg" width="410" height="200" alt="imagine11"></a></div>
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\lights.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\lights.jpg" width="410" height="200" alt="immagine12"></a></div>
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\nature.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\nature.jpg" width="410" height="200" alt="immagine13"></a></div>
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\fjords.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\fjords.jpg" width="410" height="200" alt="imagine11"></a></div>
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\lights.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\lights.jpg" width="410" height="200" alt="immagine12"></a></div>
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\nature.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\nature.jpg" width="410" height="200" alt="immagine13"></a></div>
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\fjords.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\fjords.jpg" width="410" height="200" alt="imagine11"></a></div>
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\lights.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\lights.jpg" width="410" height="200" alt="immagine12"></a></div>
+<div class="floating-box aa bb"><a href="C:\Users\Roxas\Downloads\nature.jpg" target="_blank"><img src="C:\Users\Roxas\Downloads\nature.jpg" width="410" height="200" alt="immagine13"></a></div>
+
+</p3>
+</body>
+<h1>Need some help to complete your mission? complete the questionary</h1>
+
+<div class="format">
+  <form action="action_page.php">
+    <label for="fname" style="font-family:courier; font-size: 20px;color:black">Username</label>
+    <input type="text" id="fname" name="firstname" class="select">
+
+    <label for="lname" style="font-family:courier; font-size: 20px;color:black">Password</label>
+    <input type="password" name="psw" class="select">
+	
+	<label for="lname" style="font-family:courier; font-size: 20px;color:black">Mission selected</label>
+	
+    <input type="text" id="lname" name="lastname" class="select">
+	<p id="p"><strong>Call for reinforcement and backup:</strong></p>
+
+<form>
+  <textarea>Type here you noob...</textarea>
+</form>
+
+    <label for="country" style="font-family:courier; font-size: 20px;color:black">State</label>
+    <select id="country" name="country" class="select">
+      <option value="AF">Afghanistan</option>
+	<option value="AX">Åland Islands</option>
+	<option value="AL">Albania</option>
+	<option value="DZ">Algeria</option>
+	<option value="AS">American Samoa</option>
+	<option value="AD">Andorra</option>
+	<option value="AO">Angola</option>
+	<option value="AI">Anguilla</option>
+	<option value="AQ">Antarctica</option>
+	<option value="AG">Antigua and Barbuda</option>
+	<option value="AR">Argentina</option>
+	<option value="AM">Armenia</option>
+	<option value="AW">Aruba</option>
+	<option value="AU">Australia</option>
+	<option value="AT">Austria</option>
+	<option value="AZ">Azerbaijan</option>
+	<option value="BS">Bahamas</option>
+	<option value="BH">Bahrain</option>
+	<option value="BD">Bangladesh</option>
+	<option value="BB">Barbados</option>
+	<option value="BY">Belarus</option>
+	<option value="BE">Belgium</option>
+	<option value="BZ">Belize</option>
+	<option value="BJ">Benin</option>
+	<option value="BM">Bermuda</option>
+	<option value="BT">Bhutan</option>
+	<option value="BO">Bolivia, Plurinational State of</option>
+	<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+	<option value="BA">Bosnia and Herzegovina</option>
+	<option value="BW">Botswana</option>
+	<option value="BV">Bouvet Island</option>
+	<option value="BR">Brazil</option>
+	<option value="IO">British Indian Ocean Territory</option>
+	<option value="BN">Brunei Darussalam</option>
+	<option value="BG">Bulgaria</option>
+	<option value="BF">Burkina Faso</option>
+	<option value="BI">Burundi</option>
+	<option value="KH">Cambodia</option>
+	<option value="CM">Cameroon</option>
+	<option value="CA">Canada</option>
+	<option value="CV">Cape Verde</option>
+	<option value="KY">Cayman Islands</option>
+	<option value="CF">Central African Republic</option>
+	<option value="TD">Chad</option>
+	<option value="CL">Chile</option>
+	<option value="CN">China</option>
+	<option value="CX">Christmas Island</option>
+	<option value="CC">Cocos (Keeling) Islands</option>
+	<option value="CO">Colombia</option>
+	<option value="KM">Comoros</option>
+	<option value="CG">Congo</option>
+	<option value="CD">Congo, the Democratic Republic of the</option>
+	<option value="CK">Cook Islands</option>
+	<option value="CR">Costa Rica</option>
+	<option value="CI">Côte d'Ivoire</option>
+	<option value="HR">Croatia</option>
+	<option value="CU">Cuba</option>
+	<option value="CW">Curaçao</option>
+	<option value="CY">Cyprus</option>
+	<option value="CZ">Czech Republic</option>
+	<option value="DK">Denmark</option>
+	<option value="DJ">Djibouti</option>
+	<option value="DM">Dominica</option>
+	<option value="DO">Dominican Republic</option>
+	<option value="EC">Ecuador</option>
+	<option value="EG">Egypt</option>
+	<option value="SV">El Salvador</option>
+	<option value="GQ">Equatorial Guinea</option>
+	<option value="ER">Eritrea</option>
+	<option value="EE">Estonia</option>
+	<option value="ET">Ethiopia</option>
+	<option value="FK">Falkland Islands (Malvinas)</option>
+	<option value="FO">Faroe Islands</option>
+	<option value="FJ">Fiji</option>
+	<option value="FI">Finland</option>
+	<option value="FR">France</option>
+	<option value="GF">French Guiana</option>
+	<option value="PF">French Polynesia</option>
+	<option value="TF">French Southern Territories</option>
+	<option value="GA">Gabon</option>
+	<option value="GM">Gambia</option>
+	<option value="GE">Georgia</option>
+	<option value="DE">Germany</option>
+	<option value="GH">Ghana</option>
+	<option value="GI">Gibraltar</option>
+	<option value="GR">Greece</option>
+	<option value="GL">Greenland</option>
+	<option value="GD">Grenada</option>
+	<option value="GP">Guadeloupe</option>
+	<option value="GU">Guam</option>
+	<option value="GT">Guatemala</option>
+	<option value="GG">Guernsey</option>
+	<option value="GN">Guinea</option>
+	<option value="GW">Guinea-Bissau</option>
+	<option value="GY">Guyana</option>
+	<option value="HT">Haiti</option>
+	<option value="HM">Heard Island and McDonald Islands</option>
+	<option value="VA">Holy See (Vatican City State)</option>
+	<option value="HN">Honduras</option>
+	<option value="HK">Hong Kong</option>
+	<option value="HU">Hungary</option>
+	<option value="IS">Iceland</option>
+	<option value="IN">India</option>
+	<option value="ID">Indonesia</option>
+	<option value="IR">Iran, Islamic Republic of</option>
+	<option value="IQ">Iraq</option>
+	<option value="IE">Ireland</option>
+	<option value="IM">Isle of Man</option>
+	<option value="IL">Israel</option>
+	<option value="IT">Italy</option>
+	<option value="JM">Jamaica</option>
+	<option value="JP">Japan</option>
+	<option value="JE">Jersey</option>
+	<option value="JO">Jordan</option>
+	<option value="KZ">Kazakhstan</option>
+	<option value="KE">Kenya</option>
+	<option value="KI">Kiribati</option>
+	<option value="KP">Korea, Democratic People's Republic of</option>
+	<option value="KR">Korea, Republic of</option>
+	<option value="KW">Kuwait</option>
+	<option value="KG">Kyrgyzstan</option>
+	<option value="LA">Lao People's Democratic Republic</option>
+	<option value="LV">Latvia</option>
+	<option value="LB">Lebanon</option>
+	<option value="LS">Lesotho</option>
+	<option value="LR">Liberia</option>
+	<option value="LY">Libya</option>
+	<option value="LI">Liechtenstein</option>
+	<option value="LT">Lithuania</option>
+	<option value="LU">Luxembourg</option>
+	<option value="MO">Macao</option>
+	<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+	<option value="MG">Madagascar</option>
+	<option value="MW">Malawi</option>
+	<option value="MY">Malaysia</option>
+	<option value="MV">Maldives</option>
+	<option value="ML">Mali</option>
+	<option value="MT">Malta</option>
+	<option value="MH">Marshall Islands</option>
+	<option value="MQ">Martinique</option>
+	<option value="MR">Mauritania</option>
+	<option value="MU">Mauritius</option>
+	<option value="YT">Mayotte</option>
+	<option value="MX">Mexico</option>
+	<option value="FM">Micronesia, Federated States of</option>
+	<option value="MD">Moldova, Republic of</option>
+	<option value="MC">Monaco</option>
+	<option value="MN">Mongolia</option>
+	<option value="ME">Montenegro</option>
+	<option value="MS">Montserrat</option>
+	<option value="MA">Morocco</option>
+	<option value="MZ">Mozambique</option>
+	<option value="MM">Myanmar</option>
+	<option value="NA">Namibia</option>
+	<option value="NR">Nauru</option>
+	<option value="NP">Nepal</option>
+	<option value="NL">Netherlands</option>
+	<option value="NC">New Caledonia</option>
+	<option value="NZ">New Zealand</option>
+	<option value="NI">Nicaragua</option>
+	<option value="NE">Niger</option>
+	<option value="NG">Nigeria</option>
+	<option value="NU">Niue</option>
+	<option value="NF">Norfolk Island</option>
+	<option value="MP">Northern Mariana Islands</option>
+	<option value="NO">Norway</option>
+	<option value="OM">Oman</option>
+	<option value="PK">Pakistan</option>
+	<option value="PW">Palau</option>
+	<option value="PS">Palestinian Territory, Occupied</option>
+	<option value="PA">Panama</option>
+	<option value="PG">Papua New Guinea</option>
+	<option value="PY">Paraguay</option>
+	<option value="PE">Peru</option>
+	<option value="PH">Philippines</option>
+	<option value="PN">Pitcairn</option>
+	<option value="PL">Poland</option>
+	<option value="PT">Portugal</option>
+	<option value="PR">Puerto Rico</option>
+	<option value="QA">Qatar</option>
+	<option value="RE">Réunion</option>
+	<option value="RO">Romania</option>
+	<option value="RU">Russian Federation</option>
+	<option value="RW">Rwanda</option>
+	<option value="BL">Saint Barthélemy</option>
+	<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+	<option value="KN">Saint Kitts and Nevis</option>
+	<option value="LC">Saint Lucia</option>
+	<option value="MF">Saint Martin (French part)</option>
+	<option value="PM">Saint Pierre and Miquelon</option>
+	<option value="VC">Saint Vincent and the Grenadines</option>
+	<option value="WS">Samoa</option>
+	<option value="SM">San Marino</option>
+	<option value="ST">Sao Tome and Principe</option>
+	<option value="SA">Saudi Arabia</option>
+	<option value="SN">Senegal</option>
+	<option value="RS">Serbia</option>
+	<option value="SC">Seychelles</option>
+	<option value="SL">Sierra Leone</option>
+	<option value="SG">Singapore</option>
+	<option value="SX">Sint Maarten (Dutch part)</option>
+	<option value="SK">Slovakia</option>
+	<option value="SI">Slovenia</option>
+	<option value="SB">Solomon Islands</option>
+	<option value="SO">Somalia</option>
+	<option value="ZA">South Africa</option>
+	<option value="GS">South Georgia and the South Sandwich Islands</option>
+	<option value="SS">South Sudan</option>
+	<option value="ES">Spain</option>
+	<option value="LK">Sri Lanka</option>
+	<option value="SD">Sudan</option>
+	<option value="SR">Suriname</option>
+	<option value="SJ">Svalbard and Jan Mayen</option>
+	<option value="SZ">Swaziland</option>
+	<option value="SE">Sweden</option>
+	<option value="CH">Switzerland</option>
+	<option value="SY">Syrian Arab Republic</option>
+	<option value="TW">Taiwan, Province of China</option>
+	<option value="TJ">Tajikistan</option>
+	<option value="TZ">Tanzania, United Republic of</option>
+	<option value="TH">Thailand</option>
+	<option value="TL">Timor-Leste</option>
+	<option value="TG">Togo</option>
+	<option value="TK">Tokelau</option>
+	<option value="TO">Tonga</option>
+	<option value="TT">Trinidad and Tobago</option>
+	<option value="TN">Tunisia</option>
+	<option value="TR">Turkey</option>
+	<option value="TM">Turkmenistan</option>
+	<option value="TC">Turks and Caicos Islands</option>
+	<option value="TV">Tuvalu</option>
+	<option value="UG">Uganda</option>
+	<option value="UA">Ukraine</option>
+	<option value="AE">United Arab Emirates</option>
+	<option value="GB">United Kingdom</option>
+	<option value="US">United States</option>
+	<option value="UM">United States Minor Outlying Islands</option>
+	<option value="UY">Uruguay</option>
+	<option value="UZ">Uzbekistan</option>
+	<option value="VU">Vanuatu</option>
+	<option value="VE">Venezuela, Bolivarian Republic of</option>
+	<option value="VN">Viet Nam</option>
+	<option value="VG">Virgin Islands, British</option>
+	<option value="VI">Virgin Islands, U.S.</option>
+	<option value="WF">Wallis and Futuna</option>
+	<option value="EH">Western Sahara</option>
+	<option value="YE">Yemen</option>
+	<option value="ZM">Zambia</option>
+	<option value="ZW">Zimbabwe</option>
+    </select>
+  
+    <input class="submit" type="button" onclick="alert('Congratulations you got hacked!')" value="SUBMIT">
+  </form>
+</div>
+
+<footer class="container-fluid text-center" style="background-color:silver";>
+  <p class="finito">Developed and Coded by Li Hao Zhang</p>
+</footer>
+</html>
