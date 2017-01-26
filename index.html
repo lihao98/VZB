@@ -15,14 +15,15 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+   <style>
+  <!-- utilizzato per creare la barra di ricerca -->
+  /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
-    /* Add a gray background color and some padding to the footer */
+  <!-- utilizzato per creare le slide -->  
+  /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
       padding: 25px;
@@ -40,15 +41,7 @@
       display: none; 
     }
   }
-h1 {font-family:VT323; font-size:35px; text-align:center;color:white}
-h3 {font-family:VT323; font-size:40px;color:white}
-h4 {font-family:Cabin; font-size:28px;color:red}
-p {font-family:VT323; font-size: 20px;color:silver}
-marquee {font-family:VT323; color:red; font-size: 40px;} 
-p2 {font-family:VT323; font-size: 20px;color:silver}
-p3 {font-family:Indie Flower; font-size:20px; color:#EEE8AA;}
-body {background-color:black}
-.ciao {font-family:VT323; font-size:35px; color:red}
+
 #contenitore{ margin: 0 auto; /* ipotizzando che sia centrato all'interno della pagina */
     padding: 0;
     position: relative;
@@ -61,23 +54,25 @@ body {background-color:black}
     position: absolute;
     top: 0;
     left: 500px; /* che è la larghezza del primo elemento */}
-	
+
+/* per creare le "floating-box" (riquadri contenenti immagini o altro) */
 .floating-box {
     display: inline-block;
     width: 380px;
     height: 180px;
     margin: 20px; 
 }
-.finito {font-family:VT323; font-size:20px; color:black;}
+
 .aa {
     opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    filter: alpha(opacity=50); 
 }
 
 .bb:hover {
     opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+    filter: alpha(opacity=100); 
 }
+/* utilizzato per creare la finestra a scorrimento per le nazioni */
 .select {
     width: 100%;
     padding: 12px 20px;
@@ -87,7 +82,7 @@ body {background-color:black}
     border-radius: 4px;
     box-sizing: border-box;
 }
-
+/* classi per i bottoni "SUBMIT" */
 .submit{
     width: 100%;
     background-color: #4CAF50;
@@ -100,16 +95,17 @@ body {background-color:black}
     border-radius: 4px;
     cursor: pointer;
 }
-
+/* Hover è un azione che compie quando ci passiamo sopra col puntatore del mouse */
 input[type=submit]:hover {
     background-color: #45a049;
 }
-
-.format {
+/* utilizzato per creare la finestra a scorrimento per le nazioni */
+.format {	
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
+/* utilizzato per modificare tutti i textarea contenuti dai "box" */
 textarea {
     width: 100%;
     height: 150px;
@@ -121,9 +117,20 @@ textarea {
     font-size: 16px;
     resize: none;
 }
-#p{font-family:courier; font-size: 20px;color:black}
+/* ID e creati da me */
+#p		{font-family:courier; font-size: 20px;color:black} /* utilizzato per modificare la scritta Call for reinforcement and backup */
+.finito {font-family:VT323; font-size:20px; color:black;} /* utilizzato .finito per modificare il footer */
+h1 		{font-family:VT323; font-size:35px; text-align:center;color:white} /* utilizzato per modificare tutti gli h1 */
+h3		{font-family:VT323; font-size:40px;color:white} /* utilizzato per modificare tutti gli h3 */
+h4 		{font-family:Cabin; font-size:28px;color:red} /* utilizzato per modificare tutti gli h4 */
+p  		{font-family:VT323; font-size: 20px;color:silver} /* utilizzato per modificare tutti i p */
+marquee {font-family:VT323; color:red; font-size: 40px;} /* utilizzato per modificare la scritta scorrevole */
+p2 		{font-family:VT323; font-size: 20px;color:silver} /* utilizzato per modificare tutti i p2 */
+p3 		{font-family:Indie Flower; font-size:20px; color:#EEE8AA;} /* utilizzato per modificare tutti i p3 */
+body 	{background-color:black} /* utilizzato per colorare il background del sito */
+#ciao {font-family:VT323; font-size:35px; color:red} /* utilizzato per modificare h2 */
 
-<<!-- per navigare tra le pagine -->
+<!-- per navigare tra le pagine -->
 ul.pagination {
     display: inline-block;
     padding: 0;
@@ -152,7 +159,8 @@ ul.pagination li a.active {
 
 ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 div.center {text-align: center;}
-<!-- classe per la barra di caricamento -->
+
+/* classe per la barra di caricamento */
 .cc {
     -webkit-transition: width 2s;
     transition: width 2s;
@@ -166,7 +174,10 @@ div.center {text-align: center;}
 	 
 .ff {font-family:VT323;
 	 color:white;
-	 font-size:25px;
+	 font-size:25px;}
+   
+	   
+	 
 </style>
 
 <head>
@@ -210,8 +221,7 @@ div.center {text-align: center;}
   <div class="page-header">
     <h1>Welcome to the VZB corporation</h1>      
   </div>
-<div class="row">
-</div>
+<div class="row"></div>
 <div class="col-sm-8">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -318,7 +328,7 @@ Tread softly because you tread on my dreams.
 </div>
 </div>
 <div class="container">
-  <h2 class="ciao">Mission: Conquer</h2>
+  <h2 id="ciao">Mission: Conquer</h2>
   <p>Conquering the world</p> 
   <div class="progress progress-striped ee">
     <div class="progress-bar progress-bar-danger active dd ff" role="progressbar" >
